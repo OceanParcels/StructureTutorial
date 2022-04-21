@@ -30,7 +30,7 @@ class ExampleData():
                                 temp_file.write(f.read())
 
 
-dates = [datetime(2002, 1, 1) + timedelta(days=x) for x in range(0, 100)]
+dates = [datetime(2002, 1, 1) + timedelta(days=x) for x in range(0, 60)]
 globfiles = [x.strftime("%Y%m%d") + "000000-GLOBCURRENT-L4-CUReul_hs-ALT_SUM-v02.0-fv01.0.nc" for x in dates]
 
 ExampleData(url="http://oceanparcels.org/examples-data/GlobCurrent_example_data",
